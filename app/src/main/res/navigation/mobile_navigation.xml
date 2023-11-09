@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_Splash">
+    <fragment
+        android:id="@+id/nav_Splash"
+        android:name="com.clases.starbucksapk.ui.dashboard.frgSplash"
+        android:label="fragment_frg_splash"
+        tools:layout="@layout/fragment_frg_splash" >
+        <action
+            android:id="@+id/action_nav_Splash_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.clases.starbucksapk.ui.dashboard.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_escanear"
+            app:destination="@id/nav_escanear" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_menu"
+            app:destination="@id/nav_menu" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_beneficios"
+            app:destination="@id/nav_beneficios" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_ajustes"
+            app:destination="@id/nav_ajustes" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_escanear"
+        android:name="com.clases.starbucksapk.ui.dashboard.Escanear"
+        android:label="fragment_escanear"
+        tools:layout="@layout/fragment_escanear" />
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.clases.starbucksapk.ui.dashboard.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_beneficios"
+        android:name="com.clases.starbucksapk.ui.dashboard.Beneficios"
+        android:label="fragment_beneficios"
+        tools:layout="@layout/fragment_beneficios" />
+    <fragment
+        android:id="@+id/nav_ajustes"
+        android:name="com.clases.starbucksapk.ui.dashboard.Ajustes"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.clases.starbucksapk.ui.dashboard.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
